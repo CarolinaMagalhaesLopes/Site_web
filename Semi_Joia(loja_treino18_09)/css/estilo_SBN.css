@@ -1,0 +1,91 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E0FFFF;
+    color: #333;
+}
+
+.container{
+max-width: 1000px; /* largura máxima do container é 1000px */
+margin: 0 ;
+padding: 20px;
+
+}
+
+header{
+background-color:#808080;
+color: #fff;
+padding:16px 0;
+margin-bottom:0;
+}
+
+header .marca{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom:  8px;
+}
+
+.nav1 a{
+color: #fff;
+text-decoration: none;
+margin-right: 30px;
+}
+
+.nav1 a:hover{
+    text-decoration: underline;
+}
+
+section {
+    display: flex;
+    justify-content: center;   /* centraliza horizontal */
+    align-items: center;       /* centraliza vertical (se quiser ocupar a tela toda) */
+    min-height: calc(100vh - 80px); /* tela toda menos o header */
+    padding: 20px;
+}
+
+.caixa {
+    background: #48D1CC;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 900px;
+    width: 80%;   /* ocupa 80% da largura, mas nunca mais que 900px */
+    text-align: center;
+}
+
+button, .btn{
+    display: inline-block;
+    padding: 10px 14px;
+    border: 0;
+    background:white;
+    color:black;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.btn:hover{
+    background: rgba(0,128,128);
+}
+
+.btns{
+    align-items: center;
+    padding-left: 25%;
+}
+
+footer{
+     background-color: #808080;
+    color: #fff;
+    padding: 20px;        /* espaço interno */
+    text-align: center;   /* centraliza o texto */
+    width: 100%;          /* ocupa 100% da largura */
+    position: relative;   /* garante que fique na posição normal do fluxo */
+    bottom: 0;    
+    padding-left: 25%;  
+
+}

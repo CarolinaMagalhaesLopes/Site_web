@@ -1,0 +1,144 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E0FFFF;
+    color: #333;
+    height: 100%;
+}
+
+/* Header */
+header{
+    background-color:#808080;
+    color: #fff;
+    padding:16px 0;
+    margin-bottom:0;
+}
+
+header .marca{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom:  8px;
+}
+
+/* Container */
+.container{
+    max-width: 1000px; /* largura máxima do container é 1000px */
+    margin: 0 ;
+    padding: 20px;
+}
+
+/* Navegação */
+.nav1 a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.nav1 a:hover{
+    text-decoration: underline;
+}
+
+/* Botões e links */
+.acaobotao{
+    margin-top: 14px;
+    display: grid;
+    gap: 8px;
+}
+
+.link{
+    text-align: center;
+    text-decoration: none;
+    color: #444;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+/* Main e formulário */
+main.containers {
+    flex: 1; /* ocupa o espaço restante da tela */
+    display: flex;
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;     /* centraliza vertical */
+    padding: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px; /* largura máxima do formulário */
+}
+
+/* Fieldset e legend */
+form fieldset {
+    border: none;
+}
+
+form legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Labels e inputs */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Campos lado a lado */
+form .linha {
+    display: flex;
+    gap: 15px; /* espaço entre os campos */
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* quebra a linha em telas pequenas */
+}
+
+form .campo {
+    flex: 1; /* todos os campos ocupam espaço igual */
+    display: flex;
+    flex-direction: column; /* label acima do input */
+}
+
+/* Botão do formulário */
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #808080;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #808080;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 450px; /* empurra o footer para baixo */
+}
