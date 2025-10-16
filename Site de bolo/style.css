@@ -1,0 +1,161 @@
+/* Fonte e reset */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Fundo gradiente rosa claro */
+    background: linear-gradient(135deg, #FFC0CB, #fff0f5);
+    color: #333;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Navegação */
+nav {
+    background-color: #DB7093; 
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;  
+    color: #a05275;
+    font-weight: bold;
+    text-decoration: underline #a05275;
+}
+
+a:hover{
+    color: #e0165a;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Container para conteúdo principal (ex: login, home, etc) */
+.container, .login-container {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 320px;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.3);
+    margin: 80px auto 30px; /* abaixo do nav */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalhos */
+h2 {
+    margin-bottom: 20px;
+    color: #c71585; /* rosa escuro */
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #a05275;
+    width: 100%;
+}
+
+/* Inputs (texto e senha) */
+input {
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f4aab9;
+    border-radius: 6px;
+    background-color: #fff5f8;
+    font-size: 14px;
+}
+
+/* Botão */
+button, .login-box button {
+    width: 300px;
+    padding: 10px;
+    background: #FF69B4; /* rosa pink claro */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+button:hover, .login-box button:hover {
+    background: #ff1493; /* rosa mais escuro */
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Mensagem */
+#mensagem {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #d80050;
+}
+
+/* Estilo para imagens de bolos no catálogo/detalhes */
+.bolo-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Lista de bolos */
+ul.lista-bolos {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+ul.lista-bolos li {
+    margin: 15px 0;
+    width: 200px;
+    text-align: center;
+    background: #fff0f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 182, 193, 0.3);
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+ul.lista-bolos li:hover {
+    transform: scale(1.05);
+}
+
+ul.lista-bolos li img {
+    width: 100%;
+    border-radius: 8px;
+}
